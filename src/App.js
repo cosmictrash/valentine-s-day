@@ -90,18 +90,24 @@ function App() {
   // Render cat or cat-heart image based on activeImage state
   const renderImage = () => {
     if (activeImage === "cat") {
-      return <img src="/images/cat.png" alt="Cat" className="cat" />;
+      <div>
+        return <img src="/images/cat.png" alt="Cat" className="cat" />;
+      </div>;
     } else if (activeImage === "cat-heart") {
       return (
-        <img src="/images/cat-heart.gif" alt="Cat Heart" className="cat" />
+        <div>
+          <img src="/images/cat-heart.gif" alt="Cat Heart" className="cat" />
+        </div>
       );
     } else if (activeImage.includes("no")) {
       return (
-        <img
-          src={`/images/${activeImage}.jpg`}
-          alt={`No ${activeImage}`}
-          className="cat"
-        />
+        <div>
+          <img
+            src={`/images/${activeImage}.jpg`}
+            alt={`No ${activeImage}`}
+            className="cat"
+          />
+        </div>
       );
     }
     return null;
