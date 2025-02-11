@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-import proposalComponent from "./Components/Proposal/proposal.component";
 
 const flashRainbowColors = (callback) => {
   const colors = [
