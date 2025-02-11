@@ -1,0 +1,239 @@
+/* style.css */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=PT+Serif:wght@400;700&family=Sacramento&display=swap");
+body {
+  font-family: Arial, sans-serif; /* Fallback font family */
+  text-align: center; /* Center-align text */
+  margin: 0; /* Remove default margin */
+  background-color: #efbac2; /* Set background color to light pink */
+}
+
+#container {
+  display: flex; /* Use flexbox layout */
+  margin-top: -300px;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center-align items horizontally */
+  justify-content: center; /* Center-align items vertically */
+  height: 100vh; /* Make the container full viewport height */
+}
+
+#image-container {
+  padding-top: 20px;
+  max-width: 100%;
+  max-height: 400px;
+  margin-bottom: 20px;
+  /* This container will hold the images */
+}
+
+#question {
+  font-family: "Sacramento", cursive; /* Elegant cursive font */
+  font-size: 100px; /* Large and readable */
+  color: #d32f2f; /* Deep red for emphasis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin-bottom: 20px; /* Space below */
+  text-align: center;
+}
+#options {
+  margin-top: 20px;
+  padding-right: 100px; /* Add space above the options */
+  justify-content: center; /* Center-align buttons horizontally */
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px 30px; /* Set padding for buttons */
+  margin: 20px 10px; /* Set margin around buttons */
+  font-size: 45px; /* Set font size for buttons */
+  font-family: "Sacramento", cursive; /* Apply Sacramento font to the options */
+  background-color: #fb607f; /* Set button background color */
+  color: white; /* Set text color to white */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+#after-gif-text {
+  font-family: "Arial", sans-serif;
+  font-size: 50px; /* Customize the font size */
+  color: #ff4081; /* Customize the color */
+  font-weight: bold; /* Make the text bold */
+  margin-top: 20px; /* Add some space above the text */
+}
+
+#image-container img {
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 400px;
+  margin-bottom: 20px;
+}
+
+.Logo {
+  width: 40%;
+}
+
+.Proposal {
+  display: flex;
+  align-items: center; /* Aligns text and image vertically */
+  max-width: 60%;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffe4e1; /* Light pink */
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #d32f2f;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.No3Image {
+  width: 350px; /* Adjust size */
+  height: auto;
+  border-radius: 10px;
+  margin-right: 40px; /* Space between image and text */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for images */
+  transition: transform 0.3s ease-in-out;
+}
+
+.No3Image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.ProposalText {
+  flex: 1; /* Allows text to take remaining space */
+}
+
+.Proposal h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #d32f2f;
+  margin-bottom: 10px;
+}
+
+.Proposal p {
+  font-size: 25px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.Reasons {
+  font-size: 50px;
+  max-width: 70%;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  font-family: "PT Serif", serif;
+  color: #fb607f;
+}
+
+.Reasons h2 {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 0 10px;
+  color: #d32f2f;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+  margin-top: 70px;
+}
+
+.Reasons p {
+  font-size: 22px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* List styling for better readability */
+.Reasons ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Reasons li::before {
+  content: "❤️"; /* Cute heart bullet */
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-family: "Nunito", sans-serif; /* Use Nunito font for mobile for better readability */
+  }
+
+  .Logo {
+    width: 60%; /* Make the logo larger on mobile */
+  }
+
+  #container {
+    margin-top: 0; /* Remove top margin */
+    padding: 10px; /* Add some padding */
+  }
+
+  .Proposal {
+    flex-direction: column; /* Stack text and image vertically */
+    max-width: 90%; /* Allow more space on mobile */
+    margin: 20px auto;
+    padding: 20px; /* Reduce padding */
+  }
+
+  .ProposalText {
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  h1 {
+    font-size: 40px; /* Reduce h1 size */
+  }
+
+  h2 {
+    font-size: 24px; /* Reduce h2 size */
+    letter-spacing: 1px; /* Adjust letter-spacing */
+  }
+
+  .No3Image {
+    width: 100%; /* Make images responsive */
+    margin: 10px 0; /* Adjust margins */
+  }
+
+  .Reasons {
+    font-size: 30px; /* Reduce font size */
+    max-width: 90%; /* Allow more space */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .Reasons h2 {
+    font-size: 30px; /* Adjust font size */
+    margin-top: 20px; /* Adjust top margin */
+  }
+
+  .Reasons p {
+    font-size: 18px; /* Reduce font size */
+  }
+
+  button {
+    font-size: 30px; /* Reduce button font size */
+    padding: 10px 20px; /* Adjust button padding */
+  }
+
+  #question {
+    font-size: 50px; /* Reduce question font size */
+  }
+
+  #after-gif-text {
+    font-size: 40px; /* Reduce after-gif text size */
+  }
+}
