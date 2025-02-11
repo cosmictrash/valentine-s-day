@@ -1,3 +1,4 @@
+import catImage from "./cat.png";
 import React, { useState } from "react";
 import "./App.css";
 
@@ -90,11 +91,15 @@ function App() {
   // Render cat or cat-heart image based on activeImage state
   const renderImage = () => {
     if (activeImage === "cat") {
-      return <img src="/images/cat.png" alt="cat" className="cat" />;
+      return <img src={catImage} alt="Cat" className="cat" />;
     } else if (activeImage === "cat-heart") {
       return (
         <div>
-          <img src="/images/cat-heart.gif" alt="cat-heart" className="cat" />
+          <img
+            src="/images/cat-heart.gif"
+            alt="cat-heart"
+            className="cat-heart"
+          />
         </div>
       );
     } else if (activeImage.includes("no")) {
