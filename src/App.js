@@ -1,7 +1,4 @@
 import catImage from "./cat.png";
-import catImage from "./cat.png";
-import catImage from "./cat.png";
-import catImage from "./cat.png";
 import catGif from "./cat-heart.gif";
 import React, { useState } from "react";
 import "./App.css";
