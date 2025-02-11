@@ -17,21 +17,23 @@ body {
 }
 
 #image-container {
-  padding-top: 20px;
+  padding-top: 10px; /* Decreased the top padding */
   max-width: 100%;
   max-height: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Decreased the bottom margin to reduce space */
   /* This container will hold the images */
 }
 
 #question {
   font-family: "Sacramento", cursive; /* Elegant cursive font */
-  font-size: 50px; /* Large and readable */
+  font-size: 45px; /* Decreased font size */
   color: #d32f2f; /* Deep red for emphasis */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  margin-bottom: 20px; /* Space below */
+  margin-bottom: 10px; /* Decreased the space below */
   text-align: center;
+  margin-top: 100px; /* Decreased margin-top to reduce gap */
 }
+
 #options {
   margin-top: 20px;
   padding-right: 100px; /* Add space above the options */
@@ -39,10 +41,10 @@ body {
 }
 
 button {
-  border-radius: 10px;
-  padding: 10px 30px; /* Set padding for buttons */
-  margin: 20px 10px; /* Set margin around buttons */
-  font-size: 45px; /* Set font size for buttons */
+  border-radius: 8px; /* Slightly reduced border radius */
+  padding: 8px 20px; /* Decreased padding */
+  margin: 15px 8px; /* Decreased margin */
+  font-size: 35px; /* Reduced font size */
   font-family: "Sacramento", cursive; /* Apply Sacramento font to the options */
   background-color: #fb607f; /* Set button background color */
   color: white; /* Set text color to white */
@@ -56,8 +58,8 @@ button:hover {
 }
 
 #after-gif-text {
-  font-family: "Arial", sans-serif;
-  font-size: 50px; /* Customize the font size */
+  font-family: "PT Serif", serif;
+  font-size: 45px; /* Customize the font size */
   color: #ff4081; /* Customize the color */
   font-weight: bold; /* Make the text bold */
   margin-top: 20px; /* Add some space above the text */
@@ -67,8 +69,8 @@ button:hover {
   border-radius: 10px;
   max-width: 100%;
   max-height: 400px;
-  margin-bottom: 20px;
-  margin-top: 100px;
+  margin-bottom: 10px; /* Decreased bottom margin */
+  margin-top: 100px; /* Decreased top margin */
 }
 
 .Logo {
@@ -228,12 +230,12 @@ h2 {
   }
 
   button {
-    font-size: 30px; /* Reduce button font size */
-    padding: 10px 20px; /* Adjust button padding */
+    font-size: 28px; /* Further reduce button font size */
+    padding: 8px 16px; /* Adjust button padding */
   }
 
   #question {
-    font-size: 50px; /* Reduce question font size */
+    font-size: 45px; /* Reduce question font size */
   }
 
   #after-gif-text {
