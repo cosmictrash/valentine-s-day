@@ -34,6 +34,11 @@ body {
   margin-top: 100px; /* Decreased margin-top to reduce gap */
 }
 
+.cat {
+  position: relative;
+  top: 100px; /* Adjust this value as needed */
+}
+
 #options {
   margin-top: 20px;
   padding-right: 100px; /* Add space above the options */
@@ -61,8 +66,7 @@ button:hover {
   font-family: "PT Serif", serif;
   font-size: 45px; /* Customize the font size */
   color: #ff4081; /* Customize the color */
-  font-weight: bold; /* Make the text bold */
-  margin-top: 20px; /* Add some space above the text */
+  font-weight: bold; /* Make the text bold */ /* Add some space above the text */
 }
 
 #image-container img {
@@ -116,7 +120,7 @@ h2 {
   /* Adjust size */
   height: auto;
   border-radius: 10px; /* Space between image and text */ /* Soft shadow for images */
-  transition: transform 0.3s ease-in-out;
+  margin-top: 1000px;
 }
 
 .No3Image:hover {

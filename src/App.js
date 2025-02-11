@@ -1,7 +1,18 @@
-import catImage from "./cat.png";
-import catGif from "./cat-heart.gif";
 import React, { useState } from "react";
 import "./App.css";
+import catImage from "./cat.png";
+import catGif from "./cat-heart.gif";
+import no1 from "./no1.jpg";
+import no2 from "./no2.JPG";
+import no3 from "./no3.jpg";
+import no4 from "./no4.jpg";
+
+const images = {
+  no1,
+  no2,
+  no3,
+  no4,
+};
 
 const flashRainbowColors = (callback) => {
   const colors = [
@@ -94,14 +105,10 @@ function App() {
     if (activeImage === "cat") {
       return <img src={catImage} alt="Cat" className="cat" />;
     } else if (activeImage === "cat-heart") {
-      return <img src={catGif} alt="Cat-gif" className="cat" />;
-    } else if (activeImage.includes("no")) {
+      return <img src={catGif} alt="Cat-gif" className="cat-gif" />;
+    } else if (images[activeImage]) {
       return (
-        <img
-          src={`/images/${activeImage}.jpg`}
-          alt={`no${activeImage}`}
-          className="cat"
-        />
+        <img src={images[activeImage]} alt={activeImage} className="Images" />
       );
     }
     return null;
@@ -133,27 +140,27 @@ function App() {
       </div>
       <div className="Reasons">
         <h1>REASONS YOU SHOULD GO OUT WITH ME:</h1>
-        <h2>I can carry your bags</h2>
+        <h2>❤️I can carry your bags❤️</h2>
         <img src="/Images/carry.JPG" alt="carry 3" className="No3Image" />
-        <h2>I care about you</h2>
+        <h2>❤️I care about you❤️</h2>
         <img src="/Images/ph.jpg" alt="ph" className="No3Image" />
         <img src="/Images/ph1.jpg" alt="ph1" className="No3Image" />
         <img src="/Images/ph2.JPG" alt="ph2" className="No3Image" />
         <img src="/Images/ph3.jpg" alt="ph3" className="No3Image" />
 
-        <h2>I have a nice body</h2>
+        <h2>❤️I have a nice body❤️</h2>
         <img src="/Images/bd.jpg" alt="bd" className="No3Image" />
         <img src="/Images/bd1.jpg" alt="bd1" className="No3Image" />
         <img src="/Images/bd2.jpg" alt="bd2" className="No3Image" />
         <img src="/Images/bd3.jpg" alt="bd3" className="No3Image" />
-        <h2>I buy you flowers</h2>
+        <h2>❤️I buy you flowers❤️</h2>
         <img src="/Images/f1.JPG" alt="No 3" className="No3Image" />
         <img src="/Images/f2.JPG" alt="No 3" className="No3Image" />
         <img src="/Images/f3.JPG" alt="No 3" className="No3Image" />
-        <h2>I let you win at UNO</h2>
+        <h2>❤️I let you win at UNO❤️</h2>
         <img src="/Images/u1.JPG" alt="No 3" className="No3Image" />
         <img src="/Images/u2.jpg" alt="No 3" className="No3Image" />
-        <h2>This is literally us</h2>
+        <h2>❤️This is literally us❤️</h2>
         <img src="/Images/us.jpg" alt="No 3" className="No3Image" />
         <img src="/Images/us1.JPEG" alt="No 3" className="No3Image" />
       </div>
