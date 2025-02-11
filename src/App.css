@@ -26,7 +26,7 @@ body {
 
 #question {
   font-family: "Sacramento", cursive; /* Elegant cursive font */
-  font-size: 100px; /* Large and readable */
+  font-size: 50px; /* Large and readable */
   color: #d32f2f; /* Deep red for emphasis */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   margin-bottom: 20px; /* Space below */
@@ -68,6 +68,7 @@ button:hover {
   max-width: 100%;
   max-height: 400px;
   margin-bottom: 20px;
+  margin-top: 100px;
 }
 
 .Logo {
@@ -101,7 +102,7 @@ h2 {
 }
 
 .No3Image {
-  width: 350px; /* Adjust size */
+  width: 250px; /* Adjust size */
   height: auto;
   border-radius: 10px;
   margin-right: 40px; /* Space between image and text */
@@ -118,20 +119,22 @@ h2 {
 }
 
 .Proposal h1 {
-  font-size: 60px;
+  font-family: "PT Serif", serif;
+  font-size: 40px;
   font-weight: bold;
   color: #d32f2f;
   margin-bottom: 10px;
 }
 
 .Proposal p {
-  font-size: 25px;
+  font-size: 20px;
+  font-family: "Nunito", serif;
   color: #444;
   line-height: 1.6;
 }
 
 .Reasons {
-  font-size: 50px;
+  font-size: 30px;
   max-width: 70%;
   margin: 50px auto;
   padding: 40px;
@@ -142,7 +145,7 @@ h2 {
 }
 
 .Reasons h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   padding: 0 10px;
   color: #d32f2f;
