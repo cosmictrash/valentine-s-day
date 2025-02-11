@@ -112,6 +112,13 @@ h2 {
   transition: transform 0.3s ease-in-out;
 }
 
+.cat {
+  /* Adjust size */
+  height: auto;
+  border-radius: 10px; /* Space between image and text */ /* Soft shadow for images */
+  transition: transform 0.3s ease-in-out;
+}
+
 .No3Image:hover {
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
