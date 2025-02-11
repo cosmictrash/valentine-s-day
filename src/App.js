@@ -107,7 +107,7 @@ function App() {
         <img src="/Images/logo1.JPEG" alt="Logo" className="Logo" />
       </div>
       <div className="Proposal">
-        <img src="/images/no3.jpg" alt="No 3" className="No3Image" />
+        <img src="/Images/no3.jpg" alt="No 3" className="No3Image" />
         <div className="ProposalText">
           <h1>I am sorry, I am quite late...</h1>
           <p>
@@ -128,28 +128,28 @@ function App() {
       <div className="Reasons">
         <h1>REASONS YOU SHOULD GO OUT WITH ME:</h1>
         <h2>I can carry your bags</h2>
-        <img src="/images/carry.jpg" alt="No 3" className="No3Image" />
+        <img src="/Images/carry.jpg" alt="carry 3" className="No3Image" />
         <h2>I care about you</h2>
-        <img src="/images/ph.jpg" alt="No 3" className="No3Image" />
-        <img src="/images/ph1.jpg" alt="No 3" className="No3Image" />
-        <img src="/images/ph2.jpg" alt="No 3" className="No3Image" />
-        <img src="/images/ph3.jpg" alt="No 3" className="No3Image" />
+        <img src="/Images/ph.jpg" alt="ph" className="No3Image" />
+        <img src="/Images/ph1.jpg" alt="ph1" className="No3Image" />
+        <img src="/Images/ph2.jpg" alt="ph2" className="No3Image" />
+        <img src="/Images/ph3.jpg" alt="ph3" className="No3Image" />
 
         <h2>I have a nice body</h2>
-        <img src="/images/bd.jpg" alt="No 3" className="No3Image" />
-        <img src="/images/bd1.jpg" alt="No 3" className="No3Image" />
-        <img src="/images/bd2.jpg" alt="No 3" className="No3Image" />
-        <img src="/images/bd3.jpg" alt="No 3" className="No3Image" />
+        <img src="/Images/bd.jpg" alt="bd" className="No3Image" />
+        <img src="/Images/bd1.jpg" alt="bd1" className="No3Image" />
+        <img src="/Images/bd2.jpg" alt="bd2" className="No3Image" />
+        <img src="/Images/bd3.jpg" alt="bd3" className="No3Image" />
         <h2>I buy you flowers</h2>
-        <img src="/images/f1.jpg" alt="No 3" className="No3Image" />
-        <img src="/images/f2.jpg" alt="No 3" className="No3Image" />
-        <img src="/images/f3.jpg" alt="No 3" className="No3Image" />
+        <img src="/Images/f1.jpg" alt="No 3" className="No3Image" />
+        <img src="/Images/f2.jpg" alt="No 3" className="No3Image" />
+        <img src="/Images/f3.jpg" alt="No 3" className="No3Image" />
         <h2>I let you win at UNO</h2>
-        <img src="/images/u1.jpg" alt="No 3" className="No3Image" />
-        <img src="/images/u2.jpg" alt="No 3" className="No3Image" />
+        <img src="/Images/u1.jpg" alt="No 3" className="No3Image" />
+        <img src="/Images/u2.jpg" alt="No 3" className="No3Image" />
         <h2>This is literally us</h2>
-        <img src="/images/us.jpg" alt="No 3" className="No3Image" />
-        <img src="/images/us1.JPEG" alt="No 3" className="No3Image" />
+        <img src="/Images/us.jpg" alt="No 3" className="No3Image" />
+        <img src="/Images/us1.JPEG" alt="No 3" className="No3Image" />
       </div>
 
       <div id="container">
