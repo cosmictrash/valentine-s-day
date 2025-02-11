@@ -1,4 +1,8 @@
 import catImage from "./cat.png";
+import catImage from "./cat.png";
+import catImage from "./cat.png";
+import catImage from "./cat.png";
+import catGif from "./cat-heart.gif";
 import React, { useState } from "react";
 import "./App.css";
 
@@ -93,15 +97,7 @@ function App() {
     if (activeImage === "cat") {
       return <img src={catImage} alt="Cat" className="cat" />;
     } else if (activeImage === "cat-heart") {
-      return (
-        <div>
-          <img
-            src="/images/cat-heart.gif"
-            alt="cat-heart"
-            className="cat-heart"
-          />
-        </div>
-      );
+      return <img src={catGif} alt="Cat-gif" className="cat" />;
     } else if (activeImage.includes("no")) {
       return (
         <img
