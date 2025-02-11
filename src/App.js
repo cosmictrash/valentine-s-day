@@ -128,11 +128,11 @@ function App() {
       <div className="Reasons">
         <h1>REASONS YOU SHOULD GO OUT WITH ME:</h1>
         <h2>I can carry your bags</h2>
-        <img src="/Images/carry.jpg" alt="carry 3" className="No3Image" />
+        <img src="/Images/carry.JPG" alt="carry 3" className="No3Image" />
         <h2>I care about you</h2>
         <img src="/Images/ph.jpg" alt="ph" className="No3Image" />
         <img src="/Images/ph1.jpg" alt="ph1" className="No3Image" />
-        <img src="/Images/ph2.jpg" alt="ph2" className="No3Image" />
+        <img src="/Images/ph2.JPG" alt="ph2" className="No3Image" />
         <img src="/Images/ph3.jpg" alt="ph3" className="No3Image" />
 
         <h2>I have a nice body</h2>
@@ -141,11 +141,11 @@ function App() {
         <img src="/Images/bd2.jpg" alt="bd2" className="No3Image" />
         <img src="/Images/bd3.jpg" alt="bd3" className="No3Image" />
         <h2>I buy you flowers</h2>
-        <img src="/Images/f1.jpg" alt="No 3" className="No3Image" />
-        <img src="/Images/f2.jpg" alt="No 3" className="No3Image" />
-        <img src="/Images/f3.jpg" alt="No 3" className="No3Image" />
+        <img src="/Images/f1.JPG" alt="No 3" className="No3Image" />
+        <img src="/Images/f2.JPG" alt="No 3" className="No3Image" />
+        <img src="/Images/f3.JPG" alt="No 3" className="No3Image" />
         <h2>I let you win at UNO</h2>
-        <img src="/Images/u1.jpg" alt="No 3" className="No3Image" />
+        <img src="/Images/u1.JPG" alt="No 3" className="No3Image" />
         <img src="/Images/u2.jpg" alt="No 3" className="No3Image" />
         <h2>This is literally us</h2>
         <img src="/Images/us.jpg" alt="No 3" className="No3Image" />
