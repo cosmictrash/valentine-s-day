@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./App.css";
 import catImage from "./cat.png";
 import catGif from "./cat-heart.gif";
@@ -36,11 +36,11 @@ const flashRainbowColors = (callback) => {
     if (callback) {
       callback();
     }
-  }, 2000); // Flash colors for 2 seconds
+  }, 3000); // Flash colors for 2 seconds
 };
 
 function App() {
-  const [activeImage, setActiveImage] = useState("cat"); // "cat" or "cat-heart"
+  const [activeImage, setActiveImage] = useState("cat");
   const [isQuestionVisible, setIsQuestionVisible] = useState(true);
   const [noButtonText, setNoButtonText] = useState("No");
   const [clickCount, setClickCount] = useState(0);
@@ -48,6 +48,15 @@ function App() {
   const [areButtonsVisible, setAreButtonsVisible] = useState(true); // Track button visibility
   const [isSongPlaying, setIsSongPlaying] = useState(false);
   const [questionText, setQuestionText] = useState("Will you be my valentine?"); // State for the question text
+  const audioRef = useRef(null);
+
+  const handlePlayClick = () => {
+    if (audioRef.current) {
+      audioRef.current
+        .play()
+        .catch((err) => console.error("Playback failed:", err));
+    }
+  };
 
   const noTexts = [
     "Are you sure about your decision?", // After 1st click
@@ -90,7 +99,7 @@ function App() {
     flashRainbowColors(() => {
       setIsQuestionVisible(false); // Hide the question
       setAreButtonsVisible(false); // Hide the buttons after Yes is clicked
-      setActiveImage("cat-heart"); // Set the image to cat-heart
+      setActiveImage("cat-heart");
 
       setIsGifShown(true); // Show after gif text
 
@@ -99,6 +108,13 @@ function App() {
         setIsSongPlaying(true);
       }, 500); // 500 milliseconds delay before audio starts
     });
+
+    setTimeout(() => {
+      if (audioRef.current) {
+        audioRef.current.pause(); // Stop the song
+        audioRef.current.currentTime = 0; // Reset to the beginning of the song
+      }
+    }, 3000);
   };
   // Render cat or cat-heart image based on activeImage state
   const renderImage = () => {
@@ -118,6 +134,15 @@ function App() {
     <div className="App">
       <div>
         <img src="/Images/logo1.JPEG" alt="Logo" className="Logo" />
+      </div>
+      <div>
+        <button className="play" onClick={handlePlayClick}>
+          Play
+        </button>
+        <audio ref={audioRef}>
+          <source src="/glue.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
       </div>
       <div className="Proposal">
         <img src="/Images/no3.jpg" alt="No 3" className="No3Image" />
